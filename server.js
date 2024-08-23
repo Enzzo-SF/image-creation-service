@@ -159,3 +159,6 @@ async function notifyMainApp(jobId, jobData) {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+app.get("/", (req, res) => {
+  res.send("Puppeteer Cloud Run Service is up and running!");
+});
